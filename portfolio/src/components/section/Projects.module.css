@@ -1,0 +1,11 @@
+.project{
+    text-align: left;
+    margin-left: 15%;
+}
+
+.project img{
+    display: flex;
+    width: 500px;
+    border-radius: 15px;
+    margin: 25px ;
+}

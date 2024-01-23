@@ -1,0 +1,17 @@
+.presentation{
+    margin: 40px;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.presentation h2{
+    font-size: 25px;
+}
+
+.presentation p{
+    font-size: 20px;
+}
+
+.presentation img{
+    border-radius: 20px;
+}

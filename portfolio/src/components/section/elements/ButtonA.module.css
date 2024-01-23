@@ -1,0 +1,16 @@
+.btn{
+    background-color: #74fac0;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: aquamarine;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}

@@ -1,0 +1,26 @@
+.card{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.card img{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.card img:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.card section{
+    background-color: rgba(1, 9, 28, 0.75);
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.card h3{
+    font-size: 25px;
+}
