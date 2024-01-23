@@ -7,7 +7,7 @@ function Presentation(){
             <h1>Olá, eu sou o Cauê</h1>
             <h2>Bem-vinde ao meu Portfólio</h2>
             <p> Sou fascinado pelo mundo da tecnologia e as infinitas possibilidades de <br/>
-                aprendizado e melhorias queela proporciona.<br/>
+                aprendizado e melhorias que ela proporciona.<br/>
                 Com alguns anos de experiência em gestão de pessoas na área de telecomunicações<br/>
                 e suporte e minhas habilidades na área de tecnologia, posso oferecer soluções criativas<br/>
                 e efetivas para problemas complexos e te ajudar a ter resultados fantásticos para o seu negócio.<br/>
