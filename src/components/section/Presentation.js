@@ -1,10 +1,43 @@
 import styles from './Presentation.module.css'
 import ButtonA from './elements/ButtonA'
+import {useEffect, useState} from 'react'
 
 function Presentation(){
+    const [text, setText] = useState('');
+    const toRotate = ['Cauê Takeuchi Romano!', 'Desenvolvedor Front End', 'CX Team Manager'];
+    const [loop, setLoop] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const period = 100;
+    const [delta, setDelta] = useState(100);
+
+
+    useEffect(() =>{
+        let ticker = setInterval(()=>{
+            toType()
+        }, delta)
+        return()=> {clearInterval(ticker)}
+
+    }, [text])
+
+    const toType = () =>{
+        let i = loop % toRotate.length;
+        let fullText = toRotate[i]
+        let updatedText = isDeleting ? fullText.substring(0, text.length-1) : fullText.substring(0, text.length+1)
+
+        setText(updatedText);
+
+        if(!isDeleting && updatedText === fullText){
+            setIsDeleting(true);
+            setDelta(period);
+        } else if (isDeleting && updatedText === ''){
+            setIsDeleting(false);
+            setDelta(period);
+            setLoop(loop+1);
+        }
+    }
     return(
         <div id='presentation' className={styles.presentation}>
-            <h1>Olá, eu sou o Cauê</h1>
+            <h1>Olá, eu sou {text}</h1>
             <h2>Bem-vinde ao meu Portfólio</h2>
             <p> Sou fascinado pelo mundo da tecnologia e as infinitas possibilidades de <br/>
                 aprendizado e melhorias que ela proporciona.<br/>

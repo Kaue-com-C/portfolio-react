@@ -7,6 +7,8 @@ function Card({img, title, tech, description, repo, site}){
             <a href={site}>
                 <img src={img} alt=''></img>
             </a>
+
+            
             <section>
                 <h3>{title}</h3>
                 <p><strong>{tech}</strong></p>
