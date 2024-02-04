@@ -12,9 +12,9 @@ function Skills(){
                 Conheça um pouco das minhas habilidades e conhecimentos.
             </p>
             <section>
-                <img src={javascript} alt=''></img>
                 <img src={html} alt=''></img>
                 <img src={css} alt=''></img>
+                <img src={javascript} alt=''></img>
                 <img src={react} alt=''></img>
             </section>
         </div>
